@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoGP & F1 Streaming - Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="MotoGP & F1 Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Dashboard</a></li>
+                <li><a href="live.html">Live</a></li>
+                <li><a href="jadwal.html">Jadwal</a></li>
+                <li><a href="replay.html">Replay</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard">
+        <section class="hero">
+            <img src="https://resources.motogp.pulselive.com/photo-resources/2024/11/17/24dd3144-37ae-4050-8a7e-098abd831995/MotoGP_new_logo.jpg?width=1440&height=810" alt="MotoGP Hero" class="hero-img">
+            <div class="hero-overlay">
+                <h1>MotoGP & F1 Stream by reystream</h1>
+                <p>Experience the thrill of the races live and on-demand.</p>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="card">
+            <img src="https://cdn-9.motorsport.com/images/amp/6AEAD816/s1000/lewis-hamilton-yamaha-motogp-y.jpg" class="card-img">
+            <div class="card-content">
+                <h2>Live Stream</h2>
+                <p>MotoGP & F1</p>
+                <a href="live.html" class="btn">Watch Live</a>
+            </div>
+            </div>
+            <div class="card">
+            <img src="https://media.gettyimages.com/id/1236082986/photo/spectators-watch-the-qualifying-session-at-the-circuit-of-the-americas-in-austin-texas-on.jpg?s=612x612&w=0&k=20&c=JvjC-CIJXmIn48Uqt0mDfJB0S9tWCGadlJjCgmAqRj0=" class="card-img">
+            <div class="card-content">
+                <h2>Race Schedule</h2>
+                <p>MotoGP & F1</p>
+                <a href="jadwal.html" class="btn">View Schedule</a>
+            </div>
+            </div>
+            <div class="card">
+            <img src="https://media.gettyimages.com/id/2181962791/photo/monster-energy-yamaha-motogps-french-rider-fabio-quartararo-and-red-bull-ktm-factorys-south.jpg?s=612x612&w=0&k=20&c=B60ZzBUJWGV0mhTvA9Wn4r0E6XdTO_JnbOG14Qjy0AM=" class="card-img">
+            <div class="card-content">
+                <h2>Replay</h2>
+                <p>MotoGP & F1</p>
+                <a href="replay.html" class="btn">Watch Replay</a>
+            </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img src="img/logo.png" alt="Logo Footer" class="footer-img">
+        <p>&copy; 2025 Reystream.All rights reserved.</p>
+    </footer>
+
+    <script src="global.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

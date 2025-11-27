@@ -1,0 +1,657 @@
+:root {
+    --bg: #0A0A0A;
+    --bg2: #111111;
+    --accent-motogp: #ffffff;
+    --accent-f1: #ff0000;
+    --text: #FFFFFF;
+    --text-secondary: #CCCCCC;
+    --border: #333333;
+}
+
+body.light-mode {
+    --bg: #FFFFFF;
+    --bg2: #F5F5F5;
+    --accent-motogp: #000000;
+    --accent-f1: #64531b;
+    --text: #ffffff;
+    --text-secondary: #333333;
+    --border: #DDDDDD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background: var(--bg2);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    height: 40px;
+    margin-top: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 2rem;
+}
+
+.nav-menu a {
+    color: var(--text);
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    transition: color 0.3s ease;
+    font-size: 1.3rem;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: var(--accent-f1);
+}
+
+.theme-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text);
+    transition: color 0.3s ease;
+    margin-left: 1rem;
+}
+
+.theme-btn:hover {
+    color: var(--accent-f1);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--text);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.footer {
+    background: var(--bg2);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    transition: background 0.3s ease;
+}
+
+.footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text);
+}
+
+.hero-overlay h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-overlay p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--bg2);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--text);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 1rem;
+    color: var(--accent-motogp);
+}
+
+.card p {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--accent-f1);
+    color: var(--bg);
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--accent-motogp);
+}
+
+.live {
+    background: var(--bg);
+    color: var(--text);
+    padding: 2rem;
+}
+
+.live h1 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: var(--accent-f1);
+    margin-bottom: 2rem;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.tab-btn {
+    background: var(--bg2);
+    color: var(--text);
+    border: 2px solid var(--accent-motogp);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    background: var(--accent-motogp);
+    color: var(--bg);
+    border-color: var(--accent-motogp);
+}
+
+.tab-btn:hover {
+    background: var(--accent-f1);
+    color: var(--bg);
+    border-color: var(--accent-f1);
+}
+
+.video-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--bg2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#live-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#quality-select {
+    background: var(--accent-motogp);
+    color: var(--text);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#quality-select:hover {
+    background: var(--accent-f1);
+}
+
+.controls button {
+    background: var(--accent-motogp);
+    color: var(--text);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.controls button:hover {
+    background: var(--accent-f1);
+}
+
+.info {
+    max-width: 1200px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.info h2 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--accent-motogp);
+}
+
+.info p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jadwal {
+    background: var(--bg);
+    color: var(--text);
+    padding: 2rem;
+}
+
+.jadwal h1 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: var(--accent-f1);
+    margin-bottom: 2rem;
+}
+
+.tab-link {
+    background: var(--bg2);
+    color: var(--text);
+    border: 2px solid var(--accent-motogp);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.tab-link:hover {
+    background: var(--accent-motogp);
+    color: var(--bg);
+    border-color: var(--accent-motogp);
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--accent-f1);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--accent-motogp);
+}
+
+.schedule-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.schedule-card {
+    background: var(--bg2);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.schedule-card:hover {
+    transform: scale(1.05);
+}
+
+.schedule-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.schedule-card h3 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--accent-motogp);
+    margin-bottom: 0.5rem;
+}
+
+.schedule-card p {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.schedule-card .countdown {
+    font-weight: bold;
+    color: var(--accent-f1);
+}
+
+.replay {
+    background: var(--bg);
+    color: var(--text);
+    padding: 2rem;
+    min-height: 80vh;
+}
+
+.replay h1 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: var(--accent-f1);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.replay-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.replay-item {
+    position: relative;
+    background: var(--bg2);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.replay-item:hover {
+    transform: scale(1.08);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+    border-color: var(--accent-f1);
+}
+
+.replay-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(250, 207, 64, 0.4), transparent);
+    transition: left 0.5s ease;
+    z-index: 1;
+}
+
+.replay-item:hover::before {
+    left: 100%;
+}
+
+.replay-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.replay-item:hover img {
+    filter: brightness(1.1);
+}
+
+.replay-item .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: var(--text);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.replay-item:hover .play-icon {
+    opacity: 1;
+}
+
+.replay-item .info {
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.replay-item h3 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--accent-motogp);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.replay-item p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background: var(--bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--accent-motogp);
+    color: var(--text);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+    background: var(--accent-f1);
+}
+
+.footer-img {
+    width: 120px;  
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab-btn, .tab-link {
+        width: 200px;
+    }
+    .controls {
+        bottom: 5px;
+        right: 5px;
+        flex-wrap: wrap;
+    }
+    .controls button {
+        padding: 0.3rem;
+    }
+    #quality-select {
+        padding: 0.3rem;
+    }
+    .schedule-container {
+        grid-template-columns: 1fr;
+    }
+    .replay-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    .replay-item img {
+        height: 150px;
+    }
+    .modal-content {
+        max-width: 95%;
+        max-height: 95%;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: var(--bg2);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        margin: 2rem 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}

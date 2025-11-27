@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoGP & F1 Streaming - F1 Replays</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="replay.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="MotoGP & F1 Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="live.html">Live</a></li>
+                <li><a href="jadwal.html">Jadwal</a></li>
+                <li><a href="replay.html">Replay</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="modal" id="video-modal">
+            <div class="modal-content">
+                <button class="close-btn">&times;</button>
+                <div id="video-container">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="replay">
+        <h1>F1 Replays</h1>
+        <div class="replay-grid" id="replay-list">
+        </div>
+        <a href="replay.html" class="back-link">← Back to Replay Categories</a>
+    </main>
+
+    <footer class="footer">
+        <img src="img/logo.png" alt="Logo Footer" class="footer-img">
+        <p>&copy; 2025 Reystream. All rights reserved.</p>
+    </footer>
+
+    <script src="global.js"></script>
+    <script src="f1replay.js"></script>
+</body>
+</html>

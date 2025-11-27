@@ -1,0 +1,113 @@
+.live {
+    background: var(--bg);
+    color: var(--text);
+    padding: 2rem;
+    min-height: 80vh;
+}
+
+.live h1 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: var(--accent-f1);
+    margin-bottom: 2rem;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.tab-btn {
+    background: var(--bg2);
+    color: var(--text);
+    border: 2px solid var(--accent-motogp);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    background: var(--accent-motogp);
+    color: var(--bg);
+    border-color: var(--accent-motogp);
+}
+
+.tab-btn:hover {
+    background: var(--accent-f1);
+    color: var(--bg);
+    border-color: var(--accent-f1);
+}
+
+.video-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--bg2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#live-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.controls button {
+    background: var(--accent-motogp);
+    color: var(--text);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.controls button:hover {
+    background: var(--accent-f1);
+}
+
+.info {
+    max-width: 1200px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.info h2 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--accent-motogp);
+}
+
+.info p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab-btn {
+        width: 200px;
+    }
+    .controls {
+        bottom: 5px;
+        right: 5px;
+    }
+    .controls button {
+        padding: 0.3rem;
+    }
+}
