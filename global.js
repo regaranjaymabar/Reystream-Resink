@@ -174,14 +174,14 @@ const f1Schedules = [
         title: 'Australian Grand Prix',
         date: '2026-03-06',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2110187658/photo/melbourne-australia-max-verstappen-of-the-netherlands-driving-the-oracle-red-bull-racing-rb20.jpg?s=612x612&w=0&k=20&c=Fbata0cakpvklMmMmolm3_U5VHRod1lytswUsEDMq38='
     },
     {
         id: 2,
         title: 'Chinese Grand Prix',
         date: '2026-03-13',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2206352439/photo/shanghai-china-a-general-view-as-lewis-hamilton-of-great-britain-driving-the-scuderia-ferrari.jpg?s=612x612&w=0&k=20&c=Gmjh9bVtMQRqXCjdiFXL9CHdw75qbubAYLzm6G6G7Ls='
     },
     {
         id: 3,
@@ -195,21 +195,21 @@ const f1Schedules = [
         title: 'Bahrain Grand Prix',
         date: '2026-04-10',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2210094834/photo/bahrain-bahrain-oscar-piastri-of-australia-driving-the-mclaren-mcl39-mercedes-leads-george.jpg?s=612x612&w=0&k=20&c=JVeeLF4m5w11Nec3ortSfeeMPOSjYBV4mPVy6eeT9rI='
     },
     {
         id: 5,
         title: 'Saudi Arabian Grand Prix',
         date: '2026-04-17',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/1388047790/photo/jeddah-saudi-arabia-fireworks-are-pictured-over-the-circuit-during-the-f1-grand-prix-of-saudi.jpg?s=612x612&w=0&k=20&c=yteWOO23nBIY0EyIejs8zNnyDRZHRTrjYJPtUbgrjeg='
     },
     {
         id: 6,
         title: 'Miami Grand Prix',
         date: '2026-05-01',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2213372290/photo/miami-florida-a-general-view-of-the-sprint-during-the-f1-grand-prix-of-miami-at-miami.jpg?s=612x612&w=0&k=20&c=IpbKc3EmJw2As9N_Cuw4SG6JVJ4cNdWZsbv_Qf2rt5g='
     },
     {
         id: 7,
@@ -223,153 +223,153 @@ const f1Schedules = [
         title: 'Monaco Grand Prix',
         date: '2026-06-05',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2154736854/photo/monte-carlo-monaco-charles-leclerc-of-monaco-driving-the-ferrari-sf-24-leads-oscar-piastri-of.jpg?s=612x612&w=0&k=20&c=tQwAh5DkOj15-a-FrHCgHDloXigtyoG0cgvNHFciiU0='
     },
     {
         id: 9,
         title: 'Barcelona-Catalunya Grand Prix',
         date: '2026-06-12',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2218090972/photo/barcelona-spain-oscar-piastri-of-australia-driving-the-mclaren-mcl39-mercedes-leads-max.jpg?s=612x612&w=0&k=20&c=daq1Q6PmlTIrLs9zBZsejiJJNV5jzz9ccvSS_YdhLug='
     },
     {
         id: 10,
         title: 'Austrian Grand Prix',
         date: '2026-06-26',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://resources.motogp.pulselive.com/photo-resources/2024/06/01/4259516b-7595-440a-a64a-fb87aba2d72a/_LGZ1847.jpg?width=1440&height=810'
     },
     {
         id: 11,
         title: 'British Grand Prix',
         date: '2026-07-03',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2161020140/photo/northampton-england-race-winner-lewis-hamilton-of-great-britain-and-mercedes-celebrates-in.jpg?s=612x612&w=0&k=20&c=TutVE50XaotG2fLSmXpp0EdNoFrkOLdyFsbjFDMdwC8='
     },
     {
         id: 12,
         title: 'Belgian Grand Prix',
         date: '2026-07-17',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2164045665/photo/spa-belgium-a-general-view-as-charles-leclerc-of-monaco-driving-the-ferrari-sf-24-leads-the.jpg?s=612x612&w=0&k=20&c=g4Hp5ZcCJC518xRN0E5zYXYe4UZ-At66xbVgAi1zWQc='
     },
     {
         id: 13,
         title: 'Hungarian Grand Prix',
         date: '2026-07-24',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2162890471/photo/budapest-hungary-max-verstappen-of-the-netherlands-driving-the-oracle-red-bull-racing-rb20.jpg?s=612x612&w=0&k=20&c=EEzeGeIaAZHSC9O_6CS-wy2PLrvw0ddA5rNcsuHVoyE='
     },
     {
         id: 14,
         title: 'Dutch Grand Prix',
         date: '2026-08-21',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.formula1.com/image/upload/t_16by9South/c_lfill,w_3392/q_auto/v1740000000/trackside-images/2025/F1_Grand_Prix_of_Netherlands/2233001380.webp'
     },
     {
         id: 15,
         title: 'Italian Grand Prix',
         date: '2026-09-04',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2169744160/photo/monza-italy-race-winner-charles-leclerc-of-monaco-and-ferrari-poses-for-a-picture-on-the.jpg?s=612x612&w=0&k=20&c=SVKM4XoVAczi0EPjjCiWIN_c8IV7difZSIP650L3n4s='
     },
     {
         id: 16,
         title: 'Spanish Grand Prix',
         date: '2026-09-11',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://www.news.gp/i/images/3128/madring-new-f1-circuit_f.jpg'
     },
     {
         id: 17,
         title: 'Azerbaijan Grand Prix',
         date: '2026-09-25',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://cdn.williamsf1.tech/images/fnx611yr/production/381414a094cb085f0788649d1fad4b1448bd1a3f-3776x2124.jpg?w=1200&auto=format'
     },
     {
         id: 18,
         title: 'Singapore Grand Prix',
         date: '2026-10-09',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2239344812/photo/singapore-singapore-george-russell-of-great-britain-driving-the-mercedes-amg-petronas-f1-team.jpg?s=612x612&w=0&k=20&c=pH4s2LV5LQbpVpApk4ROLbNWfQKEi7p_7B3i2nrWjwc='
     },
     {
         id: 19,
         title: 'United States Grand Prix',
         date: '2026-10-23',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2242054649/photo/austin-texas-max-verstappen-of-the-netherlands-driving-the-oracle-red-bull-racing-rb21-leads.jpg?s=612x612&w=0&k=20&c=ZuO_qvKAdsis1pxbTS-oWKfk9CpcgqqFD6-ZyXKqav8='
     },
     {
         id: 20,
         title: 'Mexican Grand Prix',
         date: '2026-10-30',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://www.blackbookmotorsport.com/wp-content/uploads/2023/11/f1-extends-mexico-city-grand-prix-contract-2025.jpg'
     },
     {
         id: 21,
         title: 'Brazilian Grand Prix',
         date: '2026-11-06',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2182679071/photo/sao-paulo-brazil-carlos-sainz-of-spain-driving-the-ferrari-sf-24-on-track-during-the-f1-grand.jpg?s=612x612&w=0&k=20&c=6ule0HRgfRnH1SfC3DeGHRAFcr9CChq0hf8KJ68owuk='
     },
     {
         id: 22,
         title: 'Las Vegas Grand Prix',
         date: '2026-11-19',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2247872341/photo/las-vegas-nevada-lando-norris-of-great-britain-driving-the-mclaren-mcl39-mercedes-on-track.jpg?s=612x612&w=0&k=20&c=W5CC0WN23cNcBc2VqZSRu0xujqMRpB2CKx3bPYXD7w8='
     },
     {
         id: 23,
         title: 'Qatar Grand Prix',
         date: '2026-11-27',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://kms.nakhal.com/Images/675x352xo/STADIUM240705113007488~.jpg'
     },
     {
         id: 24,
         title: 'Abu Dhabi Grand Prix',
         date: '2026-12-04',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://media.gettyimages.com/id/2188275031/photo/topshot-mclarens-british-driver-lando-norris-drives-during-the-abu-dhabi-formula-one-grand.jpg?s=612x612&w=0&k=20&c=Uq1DipKk8hczzY6vGbPgky13QAs0gtuXUmrLpBoU9g4='
     }
 ];
 
 const motogpReplays = [
     {
-        title: 'MotoGP Highlights - Qatar GP',
-        duration: '4 min',
-        date: 'Nov 20, 2023',
-        thumbnail: '../assets/img/replay-thumb1.jpg',
-        videoUrl: 'https://youtu.be/2T3sqL8U_P0?si=BBaVZ9a-ZqJt5k80'
+        title: 'MotoGP Full Race - Indonesian GP',
+        duration: '1h 5min',
+        date: 'Nov 20, 2022',
+        thumbnail: 'https://media.gettyimages.com/id/1386639684/photo/lombok-indonesia-riders-compete-under-heavy-rain-during-the-motogp-grand-prix-of-indonesia-at.jpg?s=612x612&w=0&k=20&c=abF0ZwwzVLtvgNJem1Q3nofi2wrJsw3Hw6MF89SK3Kk=',
+        videoUrl: 'https://www.youtube.com/live/fE_xxKiCHO0?si=mr5lkp4zGiRapxf9'
     },
     {
-        title: 'MotoGP Full Race - Valencia GP',
+        title: 'MotoGP Full Race - Australian GP',
         duration: '1h 20min',
-        date: 'Nov 18, 2023',
-        thumbnail: '../assets/img/replay-thumb1.jpg',
-        videoUrl: 'https://example.com/motogp-valencia-full.mp4'
+        date: 'Nov 18, 2022',
+        thumbnail: 'https://media.gettyimages.com/id/1433732462/photo/phillip-island-australia-francesco-bagnaia-of-italy-and-ducati-lenovo-team-leads-the-race.jpg?s=612x612&w=0&k=20&c=iEBAMPfq_QNkq89wPP034A0xWVGHNmDCVLKkbxqRg8E=',
+        videoUrl: 'https://www.youtube.com/live/BeVsG4e-WBk?si=C-dIhZY7IO_j3KCy'
     },
 ];
 
 const f1Replays = [
     {
-        title: 'F1 Highlights - Mexico GP',
-        duration: '50 min',
-        date: 'Nov 15, 2023',
-        thumbnail: '../assets/img/replay-thumb2.jpg',
-        videoUrl: 'https://example.com/f1-mexico-highlights.mp4'
+        title: 'F1 Highlights - Hngarian GP',
+        duration: '8min 15sec',
+        date: 'Nov 15, 2025',
+        thumbnail: '.https://media.gettyimages.com/id/2228337493/photo/budapest-hungary-race-winner-lando-norris-of-great-britain-and-mclaren-sprays-the-victory.jpg?s=612x612&w=0&k=20&c=Ci8YwCiKO3N548s1qZyCTWYrInL7wBBssWDSB9HPwzc=',
+        videoUrl: 'https://youtu.be/hrPtK5D5yn4?si=oCI_kyO8fYDUjidS'
     },
     {
-        title: 'F1 Full Race - Abu Dhabi GP',
-        duration: '1h 35min',
-        date: 'Nov 12, 2023',
-        thumbnail: '../assets/img/replay-thumb2.jpg',
-        videoUrl: 'https://example.com/f1-abudhabi-full.mp4'
+        title: 'F1 Highlight - Australian GP',
+        duration: '13min',
+        date: 'Nov 12, 2025',
+        thumbnail: 'https://media.gettyimages.com/id/2204808610/photo/max-verstappen-of-the-netherlands-and-oracle-red-bull-racing-lando-norris-of-great-britain.jpg?s=612x612&w=0&k=20&c=en17MGSecApga4NjnslORSpj3lsVbfefZ4yxsY0whrM=',
+        videoUrl: 'https://youtu.be/md9-jG4RzXs?si=AcCmNHvf4QCYqd5p'
     },
 ];
 
