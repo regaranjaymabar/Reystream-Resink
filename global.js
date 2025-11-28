@@ -188,8 +188,8 @@ const f1Schedules = [
         title: 'Japanese Grand Prix',
         date: '2026-03-27',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
-    },
+        img: 'https://share.google/VZzT13VLqLkXYSupC'
+    }, 
     {
         id: 4,
         title: 'Bahrain Grand Prix',
@@ -216,7 +216,7 @@ const f1Schedules = [
         title: 'Canadian Grand Prix',
         date: '2026-05-22',
         time: '15:00:00',
-        img: '../assets/img/circuit2.jpg'
+        img: 'https://share.google/ST3WOJzq1wQWJvykJ'
     },
     {
         id: 8,
