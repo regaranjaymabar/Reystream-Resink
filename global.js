@@ -188,7 +188,7 @@ const f1Schedules = [
         title: 'Japanese Grand Prix',
         date: '2026-03-27',
         time: '15:00:00',
-        img: 'https://share.google/VZzT13VLqLkXYSupC'
+        img: 'https://www.formula1.com/trackside-images/2024/F1_Grand_Prix_of_Japan/2145130256.jpg'
     }, 
     {
         id: 4,
@@ -216,7 +216,7 @@ const f1Schedules = [
         title: 'Canadian Grand Prix',
         date: '2026-05-22',
         time: '15:00:00',
-        img: 'https://share.google/ST3WOJzq1wQWJvykJ'
+        img: 'https://media.gettyimages.com/id/2156829362/photo/montreal-quebec-a-general-view-of-the-race-action-from-the-hairpin-turn-10-during-the-f1.jpg?s=612x612&w=0&k=20&c=yFvel0WF3QTz4NIdc3cTi-fcJ-PCor5n5yRMW5cZZqE='
     },
     {
         id: 8,
@@ -361,7 +361,7 @@ const f1Replays = [
         title: 'F1 Highlights - Hngarian GP',
         duration: '8min 15sec',
         date: 'Nov 15, 2025',
-        thumbnail: '.https://media.gettyimages.com/id/2228337493/photo/budapest-hungary-race-winner-lando-norris-of-great-britain-and-mclaren-sprays-the-victory.jpg?s=612x612&w=0&k=20&c=Ci8YwCiKO3N548s1qZyCTWYrInL7wBBssWDSB9HPwzc=',
+        thumbnail: 'https://media.gettyimages.com/id/2228337493/photo/budapest-hungary-race-winner-lando-norris-of-great-britain-and-mclaren-sprays-the-victory.jpg?s=612x612&w=0&k=20&c=Ci8YwCiKO3N548s1qZyCTWYrInL7wBBssWDSB9HPwzc=',
         videoUrl: 'https://youtu.be/hrPtK5D5yn4?si=oCI_kyO8fYDUjidS'
     },
     {
@@ -372,6 +372,12 @@ const f1Replays = [
         videoUrl: 'https://youtu.be/md9-jG4RzXs?si=AcCmNHvf4QCYqd5p'
     },
 ];
+
+document.addEventListener('DOMContentLoaded', () => {
+    rendermotogpSchedules();
+    renderf1Schedules();
+});
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');

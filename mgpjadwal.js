@@ -1,13 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const container = document.getElementById('schedule-list');
+    const container = document.getElementById('motogp-list');
     motogpSchedules.forEach(schedule => {
         const card = document.createElement('div');
         card.className = 'schedule-card';
         card.innerHTML = `
             <img src="${schedule.img}" alt="${schedule.title}">
-            <h3>${schedule.title}</h3>
-            <p>${schedule.date}</p>
-            <p class="countdown" id="countdown-${schedule.id}">Loading...</p>
+            <div class="info">
+                <h3>${schedule.title}</h3>
+                <p>${schedule.date}</p>
+                <p class="countdown" id="countdown-${schedule.id}">Loading...</p>
+            </div>
         `;
         container.appendChild(card);
 

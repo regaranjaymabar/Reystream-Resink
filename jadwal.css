@@ -61,39 +61,82 @@
 }
 
 .schedule-card {
+    position: relative;
     background: var(--bg2);
-    padding: 1.5rem;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+    height: 260px;
 }
 
 .schedule-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
+    border-color: var(--accent-f1);
+    box-shadow: 0 0 20px var(--accent-f1);
+    animation: glow 0.8s ease-in-out infinite alternate;
+}
+
+
+
+@keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); }
+    100% { box-shadow: 0 0 25px rgba(255, 0, 0, 0.6); }
 }
 
 .schedule-card img {
     width: 100%;
-    height: 150px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
 }
 
-.schedule-card h3 {
-    font-family: 'Oswald', sans-serif;
-    color: var(--accent-motogp);
-    margin-bottom: 0.5rem;
+.schedule-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 0, 0, 0.4), transparent);
+    transition: left 0.5s ease;
+    z-index: 1;
 }
 
-.schedule-card p {
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 0.5rem;
+.schedule-card:hover::before {
+    left: 100%;
 }
 
+.schedule-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+    z-index: 1;
+}
+
+
+.schedule-card .info {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    z-index: 2;
+    text-align: left;
+    padding: 0;
+}
+
+.schedule-card h3,
+.schedule-card p,
 .schedule-card .countdown {
-    font-weight: bold;
-    color: var(--accent-f1);
+    color: #fff;
+    margin: 3px 0;
 }
 
 @media (max-width: 768px) {

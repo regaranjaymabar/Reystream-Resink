@@ -18,6 +18,25 @@ body.light-mode {
     --border: #DDDDDD;
 }
 
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -641,6 +660,7 @@ body {
 
     .hamburger {
         display: flex;
+        margin-left: 20px;
     }
 
     .hamburger.active span:nth-child(2) {
