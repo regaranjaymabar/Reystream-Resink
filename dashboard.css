@@ -27,14 +27,27 @@
 }
 
 .hero-overlay h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateX(-80px);
+    animation: speedIn 0.8s ease-out forwards;
 }
 
 .hero-overlay p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: speedIn 1s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes speedIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px) skewX(10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) skewX(0deg);
+    }
 }
 
 .card {
@@ -111,13 +124,14 @@
 
 @media (max-width: 768px) {
     .hero-overlay h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
+
     .cards {
         grid-template-columns: 1fr;
         padding: 2rem;  
     }
     .hero {
-        height: 45vh;
+        height: 93vh;
     }
 }
