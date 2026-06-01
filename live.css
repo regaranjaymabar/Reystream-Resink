@@ -44,41 +44,18 @@
 }
 
 .video-container {
-    position: relative;
     max-width: 1200px;
     margin: 0 auto;
     background: var(--bg2);
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,.3);
 }
 
 #live-video {
     width: 100%;
     height: auto;
     display: block;
-}
-
-.controls {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    gap: 0.5rem;
-    
-}
-
-.controls button {
-    background: var(--accent-motogp);
-    color: var(--text);
-    border: none;
-    padding: 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.controls button:hover {
-    background: var(--accent-f1);
 }
 
 .info {
@@ -96,6 +73,45 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
+/* ===== Plyr ===== */
+
+.plyr {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.plyr video {
+    width: 100%;
+}
+
+.plyr--full-ui input[type=range] {
+    color: var(--accent-motogp);
+}
+
+.plyr__control--overlaid {
+    background: var(--accent-motogp);
+}
+
+.plyr__control:hover {
+    background: var(--accent-f1) !important;
+}
+
+.plyr--video {
+    background: #000;
+}
+
+.plyr__menu__container {
+    background: var(--bg2);
+    color: var(--text);
+}
+
+.plyr__menu__container .plyr__control {
+    color: var(--text);
+}
+
+
 @media (max-width: 768px) {
     .tabs {
         flex-direction: column;
@@ -104,11 +120,5 @@
     .tab-btn {
         width: 200px;
     }
-    .controls {
-        bottom: 5px;
-        right: 5px;
-    }
-    .controls button {
-        padding: 0.3rem;
-    }
+
 }
