@@ -1,5 +1,5 @@
 .jadwal {
-    background: var(--bg);
+    background: transparent;
     color: var(--text);
     padding: 2rem;
     min-height: 80vh;
@@ -8,7 +8,7 @@
 .jadwal h1 {
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    color: var(--accent-f1);
+    color: var(--accent-motogp);
     margin-bottom: 2rem;
 }
 
@@ -20,21 +20,29 @@
 }
 
 .tab-link {
-    background: var(--bg2);
-    color: var(--text);
-    border: 2px solid var(--accent-motogp);
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.08); /* Putih sangat transparan */
+    backdrop-filter: blur(16px); /* Efek blur utama */
+    -webkit-backdrop-filter: blur(16px); /* Dukungan khusus untuk browser Safari/Apple */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Atas lebih terang seolah kena cahaya */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    padding: 0.8rem 2rem; /* Sedikit lebih lebar biar proporsional */
+    border-radius: 30px; /* Lebih membulat ala tombol Apple */
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 600; /* Sedikit diturunkan dari 700 agar terkesan lebih modern */
+    letter-spacing: 0.5px;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .tab-link:hover {
-    background: var(--accent-motogp);
-    color: var(--bg);
-    border-color: var(--accent-motogp);
+    /* Saat di-hover, kaca menjadi sedikit lebih terang & terangkat */
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
 }
 
 .back-link {

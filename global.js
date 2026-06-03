@@ -8,8 +8,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-const motogpLiveUrl = 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
-const f1LiveUrl = 'https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8';
+const motogpLiveUrl = 'https://www.youtube.com/live/ioxbrBTrXxI?si=-EIOSFPPJWCwYrYe6';
+const f1LiveUrl = 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
+
+function getSessionName(raceDateString) {
+    const today = new Date();
+    const raceDate = new Date(raceDateString);
+    const diffTime = raceDate.getTime() - today.getTime();
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+
+    if (diffDays === 3) {
+        return "🏁 Free Practice"; // Jika dibuka hari Jumat
+    } else if (diffDays === 1) {
+        return "⏱️ Quali & Sprint"; // Jika dibuka hari Sabtu
+    } else if (diffDays === 0) {
+        return "🏆 Main Race"; // Jika dibuka hari Minggu
+    } else if (diffDays < 0) {
+        return "✅ Race Finished"; // Jika sudah lewat
+    } else {
+        return "⏳ Waiting for Weekend"; // Jika dibuka hari Senin - Kamis
+    }
+}
 
 const motogpSchedules = [
     {
