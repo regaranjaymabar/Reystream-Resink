@@ -397,27 +397,3 @@ document.addEventListener('DOMContentLoaded', () => {
     renderf1Schedules();
 });
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
-
-    if (themeToggle) {
-        themeToggle.textContent = body.classList.contains('light-mode') ? '☀️' : '🌙';
-
-        themeToggle.addEventListener('click', () => {
-            body.classList.toggle('light-mode');
-            themeToggle.textContent = body.classList.contains('light-mode') ? '☀️' : '🌙';
-            localStorage.setItem('theme', body.classList.contains('light-mode') ? 'light' : 'dark');
-        });
-
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'light') {
-            body.classList.add('light-mode');
-            themeToggle.textContent = '☀️';
-        } else {
-            body.classList.remove('light-mode');
-            themeToggle.textContent = '🌙';
-        }
-    }
-});
