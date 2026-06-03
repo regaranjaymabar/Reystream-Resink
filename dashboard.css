@@ -344,7 +344,10 @@
     .hero-overlay h1 {
         font-size: 3rem;
     }
-
+    .hero-logo {
+        width: 250px !important;
+        margin-bottom: 0.5rem;
+    }
     .cards {
         grid-template-columns: 1fr;
         padding: 2rem;  
