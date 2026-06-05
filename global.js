@@ -12,21 +12,34 @@ const motogpLiveUrl = 'https://www.youtube.com/live/ioxbrBTrXxI?si=-EIOSFPPJWCwY
 const f1LiveUrl = 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
 
 function getSessionName(raceDateString) {
+    // 1. Ambil waktu HARI INI
     const today = new Date();
-    const raceDate = new Date(raceDateString);
-    const diffTime = raceDate.getTime() - today.getTime();
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+    // Hilangkan jam/menit agar perhitungannya murni tanggal saja
+    const todayDateOnly = new Date(today.getFullYear(), today.getMonth(), today.getDate());
 
-    if (diffDays === 3) {
-        return "🏁 Free Practice"; // Jika dibuka hari Jumat
-    } else if (diffDays === 1) {
-        return "⏱️ Quali & Sprint"; // Jika dibuka hari Sabtu
-    } else if (diffDays === 0) {
+    // 2. Ambil tanggal BALAPAN UTAMA (Race Date - biasanya Minggu)
+    const race = new Date(raceDateString);
+    const raceDateOnly = new Date(race.getFullYear(), race.getMonth(), race.getDate());
+
+    // 3. Hitung selisih HARI ke balapan utama
+    const diffTime = raceDateOnly.getTime() - todayDateOnly.getTime();
+    const daysToRace = Math.round(diffTime / (1000 * 60 * 60 * 24));
+
+    // LOGIKA SESI BERLANGSUNG
+    // Jika hari ini Minggu (Main Race), daysToRace = 0
+    // Jika hari ini Sabtu, daysToRace = 1
+    // Jika hari ini Jumat, daysToRace = 2
+
+    if (daysToRace === 0) {
+        return "⏱️ FP1 & Practice"; // Jika dibuka hari Jumat
+    } else if (daysToRace === 1) {
+        return "⏱️ FP2, Quali & Sprint"; // Jika dibuka hari Sabtu
+    } else if (daysToRace === 2) {
         return "🏆 Main Race"; // Jika dibuka hari Minggu
-    } else if (diffDays < 0) {
-        return "✅ Race Finished"; // Jika sudah lewat
+    } else if (daysToRace < 0) {
+        return "✅ Race Finished"; // Jika dibuka hari Senin+ (setelah race)
     } else {
-        return "⏳ Waiting for Weekend"; // Jika dibuka hari Senin - Kamis
+        return "⏳ Waiting for Weekend"; // Jika dibuka hari Senin - Kamis (sebelum race)
     }
 }
 
